@@ -73,17 +73,13 @@ export const PriceProvider: React.FC<{ children: React.ReactNode }> = ({ childre
     return s;
   }, [state.portfolios]);
 
-  // Only the held tickers that the snapshot doesn't already price need a live pull.
-  // (The curated universe is fully covered by the daily snapshot.)
-  const liveKey = useMemo(() => {
-    if (!snapshot) return '';
-    return Array.from(heldSymbols)
-      .filter((sym) => !snapshot.quotes[sym])
-      .sort()
-      .join(',');
-  }, [heldSymbols, snapshot]);
+  // We pull live quotes for every held ticker — snapshot ones too, so the displayed
+  // prices are as fresh as possible and the status flips to "Live". This is bounded
+  // by your number of holdings (not the whole universe), so it stays light. With no
+  // holdings there's nothing to make live, and the daily snapshot is shown as-is.
+  const liveKey = useMemo(() => Array.from(heldSymbols).sort().join(','), [heldSymbols]);
 
-  // 2) Best-effort live quotes for those custom tickers, overlaid on the snapshot.
+  // 2) Best-effort live quotes for held tickers, overlaid on the snapshot.
   useEffect(() => {
     const symbols = liveKey ? liveKey.split(',') : [];
     if (symbols.length === 0) {
