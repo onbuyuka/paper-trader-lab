@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Paper Trader Lab — Build paper portfolios · Track PnL</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📈</text></svg>">
+    <meta name="description" content="A no-money paper-trading lab. Build hypothetical portfolios, log buys and sells, and track profit and loss against daily price snapshots — all in your browser. Compare alternative portfolios head to head." />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+              display: ['"Space Grotesk"', 'Inter', 'sans-serif'],
+              mono: ['"JetBrains Mono"', 'ui-monospace', 'monospace'],
+            },
+            colors: {
+              ink: {
+                700: '#1f2733',
+                800: '#161d27',
+                900: '#0d121a',
+                950: '#080b11',
+              },
+              paper: {
+                50: '#f7f9fc',
+                100: '#eef2f8',
+                200: '#dce3ee',
+                300: '#c2cddd',
+              },
+              gain: {
+                400: '#34d399',
+                500: '#10b981',
+                600: '#059669',
+              },
+              loss: {
+                400: '#fb7185',
+                500: '#f43f5e',
+                600: '#e11d48',
+              },
+              brandx: {
+                400: '#60a5fa',
+                500: '#3b82f6',
+                600: '#2563eb',
+              },
+            },
+            animation: {
+              'fade-in': 'fadeIn 0.4s ease-out',
+              'fade-in-up': 'fadeInUp 0.45s ease-out',
+              'pop': 'pop 0.35s cubic-bezier(0.2, 0.8, 0.2, 1)',
+            },
+            keyframes: {
+              fadeIn: {
+                '0%': { opacity: '0' },
+                '100%': { opacity: '1' },
+              },
+              fadeInUp: {
+                '0%': { opacity: '0', transform: 'translateY(12px)' },
+                '100%': { opacity: '1', transform: 'translateY(0)' },
+              },
+              pop: {
+                '0%': { opacity: '0', transform: 'scale(0.96)' },
+                '100%': { opacity: '1', transform: 'scale(1)' },
+              },
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      /* Tell the browser to render native form controls (date picker icon, number
+         spinners, scrollbars) in dark mode, so they're light-coloured and visible. */
+      :root { color-scheme: dark; }
+      body { background-color: #080b11; }
+      .num { font-variant-numeric: tabular-nums; }
+      /* Brighten the date input's calendar icon a touch for extra contrast. */
+      input[type='date']::-webkit-calendar-picker-indicator {
+        opacity: 0.7;
+        cursor: pointer;
+      }
+      input[type='date']::-webkit-calendar-picker-indicator:hover { opacity: 1; }
+      ::-webkit-scrollbar { height: 10px; width: 10px; }
+      ::-webkit-scrollbar-thumb { background: #1f2733; border-radius: 9999px; }
+    </style>
+  </head>
+  <body class="font-sans text-paper-100 antialiased">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>

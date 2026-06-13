@@ -1,0 +1,58 @@
+name: Refresh prices
+
+# Pulls an end-of-day price + FX snapshot from Yahoo Finance (no API key) and writes
+# it to public/prices.json. It updates ONLY the JSON file on the gh-pages branch — the
+# app fetches it at runtime, so there's no rebuild and no repository secret required.
+
+on:
+  schedule:
+    # 22:30 UTC on weekdays — after the US market close. GitHub may delay scheduled
+    # runs under load; that's fine for an end-of-day snapshot.
+    - cron: '30 22 * * 1-5'
+  workflow_dispatch: {}
+
+# Avoid overlapping runs; let the newest win.
+concurrency:
+  group: refresh-prices
+  cancel-in-progress: true
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout main (for the fetch script + universe)
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          path: main
+
+      - name: Checkout gh-pages (the live site)
+        uses: actions/checkout@v4
+        with:
+          ref: gh-pages
+          path: site
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Fetch prices into the deployed site
+        run: PRICES_OUT="$GITHUB_WORKSPACE/site/prices.json" node main/scripts/fetchPrices.mjs
+
+      - name: Commit & push if the snapshot changed
+        working-directory: site
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          if git status --porcelain | grep -q prices.json; then
+            git add prices.json
+            git commit -m "chore: refresh prices [skip ci]"
+            git push origin gh-pages
+            echo "Pushed updated prices.json"
+          else
+            echo "No change in prices.json"
+          fi
