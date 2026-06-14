@@ -1,11 +1,11 @@
 {
-  "asOf": "2026-06-13T21:26:02.606Z",
+  "asOf": "2026-06-14T08:35:27.855Z",
   "base": "USD",
   "fx": {
     "USD": 1,
     "EUR": 0.86408,
-    "GBP": 0.745879,
     "TRY": 46.2573,
+    "GBP": 0.745823,
     "DKK": 6.4608
   },
   "quotes": {
@@ -18,6 +18,15 @@
       "changePct": -5.81,
       "date": "2026-06-12"
     },
+    "OKLO": {
+      "symbol": "OKLO",
+      "name": "Oklo Inc.",
+      "currency": "USD",
+      "price": 57.49,
+      "change": -0.6,
+      "changePct": -1.03,
+      "date": "2026-06-12"
+    },
     "GEV": {
       "symbol": "GEV",
       "name": "GE Vernova",
@@ -25,15 +34,6 @@
       "price": 940.66,
       "change": 7.05,
       "changePct": 0.76,
-      "date": "2026-06-12"
-    },
-    "VRT": {
-      "symbol": "VRT",
-      "name": "Vertiv Holdings",
-      "currency": "USD",
-      "price": 302.87,
-      "change": 2.36,
-      "changePct": 0.79,
       "date": "2026-06-12"
     },
     "BWXT": {
@@ -45,6 +45,15 @@
       "changePct": 4.03,
       "date": "2026-06-12"
     },
+    "VRT": {
+      "symbol": "VRT",
+      "name": "Vertiv Holdings",
+      "currency": "USD",
+      "price": 302.87,
+      "change": 2.36,
+      "changePct": 0.79,
+      "date": "2026-06-12"
+    },
     "KTOS": {
       "symbol": "KTOS",
       "name": "Kratos Defense",
@@ -52,15 +61,6 @@
       "price": 57.75,
       "change": -0.77,
       "changePct": -1.32,
-      "date": "2026-06-12"
-    },
-    "ONDS": {
-      "symbol": "ONDS",
-      "name": "Ondas Holdings",
-      "currency": "USD",
-      "price": 9.33,
-      "change": -1.1,
-      "changePct": -10.55,
       "date": "2026-06-12"
     },
     "PLTR": {
@@ -81,13 +81,13 @@
       "changePct": -8.25,
       "date": "2026-06-12"
     },
-    "OKLO": {
-      "symbol": "OKLO",
-      "name": "Oklo Inc.",
+    "ONDS": {
+      "symbol": "ONDS",
+      "name": "Ondas Holdings",
       "currency": "USD",
-      "price": 57.49,
-      "change": -0.6,
-      "changePct": -1.03,
+      "price": 9.33,
+      "change": -1.1,
+      "changePct": -10.55,
       "date": "2026-06-12"
     },
     "RHM": {
@@ -99,22 +99,13 @@
       "changePct": -0.35,
       "date": "2026-06-12"
     },
-    "MSFT": {
-      "symbol": "MSFT",
-      "name": "Microsoft Corp.",
+    "NVDA": {
+      "symbol": "NVDA",
+      "name": "NVIDIA Corp.",
       "currency": "USD",
-      "price": 390.74,
-      "change": -25.93,
-      "changePct": -6.22,
-      "date": "2026-06-12"
-    },
-    "AMZN": {
-      "symbol": "AMZN",
-      "name": "Amazon.com Inc.",
-      "currency": "USD",
-      "price": 238.55,
-      "change": -7.48,
-      "changePct": -3.04,
+      "price": 205.19,
+      "change": 0.09,
+      "changePct": 0.04,
       "date": "2026-06-12"
     },
     "GOOGL": {
@@ -126,6 +117,15 @@
       "changePct": -2.4,
       "date": "2026-06-12"
     },
+    "MSFT": {
+      "symbol": "MSFT",
+      "name": "Microsoft Corp.",
+      "currency": "USD",
+      "price": 390.74,
+      "change": -25.93,
+      "changePct": -6.22,
+      "date": "2026-06-12"
+    },
     "AAPL": {
       "symbol": "AAPL",
       "name": "Apple Inc.",
@@ -135,13 +135,13 @@
       "changePct": -5.27,
       "date": "2026-06-12"
     },
-    "NVDA": {
-      "symbol": "NVDA",
-      "name": "NVIDIA Corp.",
+    "AMZN": {
+      "symbol": "AMZN",
+      "name": "Amazon.com Inc.",
       "currency": "USD",
-      "price": 205.19,
-      "change": 0.09,
-      "changePct": 0.04,
+      "price": 238.55,
+      "change": -7.48,
+      "changePct": -3.04,
       "date": "2026-06-12"
     },
     "META": {
@@ -180,15 +180,6 @@
       "changePct": -2.24,
       "date": "2026-06-12"
     },
-    "AVGO": {
-      "symbol": "AVGO",
-      "name": "Broadcom Inc.",
-      "currency": "USD",
-      "price": 382.07,
-      "change": -3.66,
-      "changePct": -0.95,
-      "date": "2026-06-12"
-    },
     "ARM": {
       "symbol": "ARM",
       "name": "Arm Holdings",
@@ -196,6 +187,15 @@
       "price": 380.81,
       "change": 37.88,
       "changePct": 11.05,
+      "date": "2026-06-12"
+    },
+    "AVGO": {
+      "symbol": "AVGO",
+      "name": "Broadcom Inc.",
+      "currency": "USD",
+      "price": 382.07,
+      "change": -3.66,
+      "changePct": -0.95,
       "date": "2026-06-12"
     },
     "TSM": {
@@ -207,15 +207,6 @@
       "changePct": 2.11,
       "date": "2026-06-12"
     },
-    "V": {
-      "symbol": "V",
-      "name": "Visa Inc.",
-      "currency": "USD",
-      "price": 322.39,
-      "change": -1.18,
-      "changePct": -0.36,
-      "date": "2026-06-12"
-    },
     "JPM": {
       "symbol": "JPM",
       "name": "JPMorgan Chase",
@@ -225,13 +216,13 @@
       "changePct": 2.67,
       "date": "2026-06-12"
     },
-    "DIS": {
-      "symbol": "DIS",
-      "name": "Walt Disney Co.",
+    "V": {
+      "symbol": "V",
+      "name": "Visa Inc.",
       "currency": "USD",
-      "price": 100.04,
-      "change": 0.33,
-      "changePct": 0.33,
+      "price": 322.39,
+      "change": -1.18,
+      "changePct": -0.36,
       "date": "2026-06-12"
     },
     "SPY": {
@@ -241,6 +232,15 @@
       "price": 741.75,
       "change": 4.2,
       "changePct": 0.57,
+      "date": "2026-06-12"
+    },
+    "DIS": {
+      "symbol": "DIS",
+      "name": "Walt Disney Co.",
+      "currency": "USD",
+      "price": 100.04,
+      "change": 0.33,
+      "changePct": 0.33,
       "date": "2026-06-12"
     },
     "QQQ": {
