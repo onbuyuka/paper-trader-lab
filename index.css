@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Tell the browser to render native form controls (date picker icon, number
+   spinners, scrollbars) in dark mode, so they're light-coloured and visible. */
+:root {
+  color-scheme: dark;
+}
+body {
+  background-color: #080b11;
+}
+.num {
+  font-variant-numeric: tabular-nums;
+}
+/* Brighten the date input's calendar icon a touch for extra contrast. */
+input[type='date']::-webkit-calendar-picker-indicator {
+  opacity: 0.7;
+  cursor: pointer;
+}
+input[type='date']::-webkit-calendar-picker-indicator:hover {
+  opacity: 1;
+}
+::-webkit-scrollbar {
+  height: 10px;
+  width: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: #1f2733;
+  border-radius: 9999px;
+}
