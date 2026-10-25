@@ -1,6 +1,83 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss';
+
+@theme {
+  --font-sans: Inter, sans-serif;
+  --font-display: 'Space Grotesk', Inter, sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, monospace;
+
+  --color-ink-700: #1f2733;
+  --color-ink-800: #161d27;
+  --color-ink-900: #0d121a;
+  --color-ink-950: #080b11;
+
+  --color-paper-50: #f7f9fc;
+  --color-paper-100: #eef2f8;
+  --color-paper-200: #dce3ee;
+  --color-paper-300: #c2cddd;
+
+  --color-gain-400: #34d399;
+  --color-gain-500: #10b981;
+  --color-gain-600: #059669;
+
+  --color-loss-400: #fb7185;
+  --color-loss-500: #f43f5e;
+  --color-loss-600: #e11d48;
+
+  --color-brandx-400: #60a5fa;
+  --color-brandx-500: #3b82f6;
+  --color-brandx-600: #2563eb;
+
+  --animate-fade-in: fadeIn 0.4s ease-out;
+  --animate-fade-in-up: fadeInUp 0.45s ease-out;
+  --animate-pop: pop 0.35s cubic-bezier(0.2, 0.8, 0.2, 1);
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(12px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  @keyframes pop {
+    0% {
+      opacity: 0;
+      transform: scale(0.96);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+}
+
+/*
+  The default border color has changed to `currentcolor` in Tailwind CSS v4,
+  so we've added these compatibility styles to make sure everything still
+  looks the same as it did with Tailwind CSS v3.
+
+  If we ever want to remove these styles, we need to add an explicit border
+  color utility to any element that depends on these defaults.
+*/
+@layer base {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-gray-200, currentcolor);
+  }
+}
 
 /* Tell the browser to render native form controls (date picker icon, number
    spinners, scrollbars) in dark mode, so they're light-coloured and visible. */

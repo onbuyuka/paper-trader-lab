@@ -51,7 +51,7 @@ export const Modal: React.FC<ModalProps> = ({ open, onClose, title, children, la
       aria-labelledby={labelledBy ?? (title ? 'modal-title' : undefined)}
     >
       <div
-        className="absolute inset-0 bg-ink-950/70 backdrop-blur-sm animate-fade-in"
+        className="absolute inset-0 bg-ink-950/70 backdrop-blur-xs animate-fade-in"
         onClick={onClose}
       />
       <div

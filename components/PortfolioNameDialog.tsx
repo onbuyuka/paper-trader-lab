@@ -54,7 +54,7 @@ export const PortfolioNameDialog: React.FC<Props> = ({
           onChange={(e) => setValue(e.target.value)}
           placeholder={placeholder}
           maxLength={60}
-          className="w-full rounded-lg border border-white/10 bg-ink-950 px-3 py-2 text-sm text-paper-50 focus:border-brandx-500 focus:outline-none"
+          className="w-full rounded-lg border border-white/10 bg-ink-950 px-3 py-2 text-sm text-paper-50 focus:border-brandx-500 focus:outline-hidden"
         />
         <div className="flex justify-end gap-2">
           <button

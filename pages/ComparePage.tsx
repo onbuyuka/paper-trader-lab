@@ -96,7 +96,7 @@ export const ComparePage: React.FC = () => {
             </thead>
             <tbody className="divide-y divide-white/5">
               {rows.map(({ portfolio, summary, returnPct }) => (
-                <tr key={portfolio.id} className="hover:bg-white/[0.02]">
+                <tr key={portfolio.id} className="hover:bg-white/2">
                   <td className="px-5 py-3">
                     <Link to={`/p/${portfolio.id}`} className="flex items-center gap-2">
                       <ColorDot color={portfolio.color} />

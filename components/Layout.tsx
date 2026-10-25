@@ -12,7 +12,7 @@ export const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) =>
 
   return (
     <div className="min-h-screen flex flex-col bg-ink-950">
-      <header className="sticky top-0 z-30 border-b border-white/5 bg-ink-950/85 backdrop-blur">
+      <header className="sticky top-0 z-30 border-b border-white/5 bg-ink-950/85 backdrop-blur-sm">
         <div className="mx-auto max-w-6xl px-4 h-16 flex items-center gap-4">
           <Link to="/" className="flex items-center gap-2 group">
             <span className="text-2xl" aria-hidden>📈</span>

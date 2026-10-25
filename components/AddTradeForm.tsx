@@ -199,7 +199,7 @@ export const AddTradeForm: React.FC<{ portfolioId: string }> = ({ portfolioId })
             }}
             onFocus={() => setShowList(true)}
             placeholder="e.g. TSLA, Rheinmetall, BTC-USD, NVO.CO…"
-            className="w-full rounded-lg border border-white/10 bg-ink-950 px-3 py-2 text-sm text-paper-50 focus:border-brandx-500 focus:outline-none"
+            className="w-full rounded-lg border border-white/10 bg-ink-950 px-3 py-2 text-sm text-paper-50 focus:border-brandx-500 focus:outline-hidden"
           />
           {showList && !picked && (query.trim().length > 0 || results.length > 0) && (
             <ul className="absolute z-20 mt-1 max-h-72 w-full overflow-auto rounded-lg border border-white/10 bg-ink-900 shadow-xl">
@@ -257,7 +257,7 @@ export const AddTradeForm: React.FC<{ portfolioId: string }> = ({ portfolioId })
             value={date}
             max={todayISO()}
             onChange={(e) => setDate(e.target.value)}
-            className="num w-full rounded-lg border border-white/10 bg-ink-950 px-3 py-2 text-sm text-paper-50 focus:border-brandx-500 focus:outline-none"
+            className="num w-full rounded-lg border border-white/10 bg-ink-950 px-3 py-2 text-sm text-paper-50 focus:border-brandx-500 focus:outline-hidden"
           />
         </div>
 
@@ -273,7 +273,7 @@ export const AddTradeForm: React.FC<{ portfolioId: string }> = ({ portfolioId })
             value={quantity}
             onChange={(e) => setQuantity(e.target.value)}
             placeholder="0"
-            className="num w-full rounded-lg border border-white/10 bg-ink-950 px-3 py-2 text-sm text-paper-50 focus:border-brandx-500 focus:outline-none"
+            className="num w-full rounded-lg border border-white/10 bg-ink-950 px-3 py-2 text-sm text-paper-50 focus:border-brandx-500 focus:outline-hidden"
           />
         </div>
 
@@ -302,7 +302,7 @@ export const AddTradeForm: React.FC<{ portfolioId: string }> = ({ portfolioId })
                 setPriceAsOf(null);
               }}
               placeholder="0.00"
-              className="num w-full rounded-lg border border-white/10 bg-ink-950 py-2 pl-7 pr-3 text-sm text-paper-50 focus:border-brandx-500 focus:outline-none"
+              className="num w-full rounded-lg border border-white/10 bg-ink-950 py-2 pl-7 pr-3 text-sm text-paper-50 focus:border-brandx-500 focus:outline-hidden"
             />
           </div>
         </div>
@@ -318,7 +318,7 @@ export const AddTradeForm: React.FC<{ portfolioId: string }> = ({ portfolioId })
             value={fee}
             onChange={(e) => setFee(e.target.value)}
             placeholder="0"
-            className="num w-20 rounded-md border border-white/10 bg-ink-950 px-2 py-1 text-paper-50 focus:border-brandx-500 focus:outline-none"
+            className="num w-20 rounded-md border border-white/10 bg-ink-950 px-2 py-1 text-paper-50 focus:border-brandx-500 focus:outline-hidden"
           />
           {valid && (
             <span className="ml-1">

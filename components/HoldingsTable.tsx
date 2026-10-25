@@ -44,7 +44,7 @@ export const HoldingsTable: React.FC<Props> = ({ holdings, display }) => {
             const valueDisplay = h.marketValue;
             const pnlDisplay = h.unrealizedPnl;
             return (
-              <tr key={h.symbol} className="hover:bg-white/[0.02]">
+              <tr key={h.symbol} className="hover:bg-white/2">
                 <td className="px-5 py-3">
                   <div className="font-600 text-paper-50">{h.symbol}</div>
                   <div className="text-xs text-paper-300/60 truncate max-w-[160px]">{h.name}</div>
