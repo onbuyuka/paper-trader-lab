@@ -80,12 +80,14 @@ There are two layers, both keyless:
    close and commits the JSON straight to `gh-pages` — no rebuild, no secret. This ships as
    a seed so the app works on first paint and offline.
 2. **Live quotes for any ticker (in-browser).** [`utils/live.ts`](utils/live.ts) lets the
-   running app search **any** stock/ETF/crypto on Yahoo and fetch live quotes + FX for any
+   running app search **any** stock/ETF/crypto and fetch live quotes + FX for any
    ticker you hold that isn't already in the snapshot, then overlays them on the snapshot.
-   Because a static site can't call Yahoo directly (CORS), requests go through a small chain
-   of public CORS proxies (`corsproxy.io`, `codetabs`, `allorigins`) — the first that
-   responds wins. Only public market data is ever requested; if every proxy or Yahoo is
-   unavailable, the app silently falls back to the committed snapshot.
+   Search, today's prices, past closes and FX are read first from CNBC's quote, daily-bar
+   and symbol-lookup services, which allow browser requests directly. Anything CNBC can't
+   answer falls back to Yahoo through a small chain of public CORS proxies (`allorigins`,
+   `codetabs`), each given a few seconds before moving on — the first that responds wins.
+   Only public market data is ever requested; if every source is unavailable, the app
+   falls back to the committed snapshot and the trade form asks for the price by hand.
 
 ### Adding a ticker
 

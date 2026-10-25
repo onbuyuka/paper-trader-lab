@@ -23,6 +23,7 @@ export const AddTradeForm: React.FC<{ portfolioId: string }> = ({ portfolioId })
   const [remote, setRemote] = useState<SymbolHit[]>([]);
   const [searching, setSearching] = useState(false);
   const [resolving, setResolving] = useState(false);
+  const [priceFailed, setPriceFailed] = useState(false);
 
   const [type, setType] = useState<TxnType>('BUY');
   const [quantity, setQuantity] = useState('');
@@ -96,6 +97,7 @@ export const AddTradeForm: React.FC<{ portfolioId: string }> = ({ portfolioId })
     const id = ++priceReqId.current;
     const yahoo = getInstrument(picked.symbol)?.yahoo ?? picked.symbol;
     const isToday = date >= todayISO();
+    setPriceFailed(false);
 
     // For today, a cached snapshot/live quote avoids a network round-trip.
     if (isToday) {
@@ -120,9 +122,15 @@ export const AddTradeForm: React.FC<{ portfolioId: string }> = ({ portfolioId })
         if (quote.currency && quote.currency !== picked.currency) {
           setPicked((p) => (p ? { ...p, currency: quote.currency } : p));
         }
+      } else {
+        setPriceFailed(true);
       }
       setResolving(false);
-    })().catch(() => setResolving(false));
+    })().catch(() => {
+      if (id !== priceReqId.current) return;
+      setPriceFailed(true);
+      setResolving(false);
+    });
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [picked?.symbol, date, priceEdited]);
 
@@ -283,6 +291,8 @@ export const AddTradeForm: React.FC<{ portfolioId: string }> = ({ portfolioId })
             Price ({nativeCur}){' '}
             {resolving ? (
               <span className="text-paper-300/40">· fetching…</span>
+            ) : priceFailed && !price ? (
+              <span className="text-amber-300/80">· couldn’t fetch, enter it manually</span>
             ) : priceAsOf ? (
               <span className="text-paper-300/40">· close {formatDate(priceAsOf)}</span>
             ) : null}
@@ -297,6 +307,9 @@ export const AddTradeForm: React.FC<{ portfolioId: string }> = ({ portfolioId })
               step="any"
               value={price}
               onChange={(e) => {
+                // A typed price wins: abandon any lookup still in flight.
+                priceReqId.current++;
+                setResolving(false);
                 setPrice(e.target.value);
                 setPriceEdited(true);
                 setPriceAsOf(null);
