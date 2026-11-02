@@ -118,3 +118,12 @@ Copenhagen). It's picked up by the next snapshot automatically.
   currency surfaces the FX move. Past-dated trades fetch the historical rate automatically.
 
 An independent hobby project. Ticker data is used for a non-commercial educational tool.
+
+## License
+
+The original code and documentation in this repository are licensed under the
+[MIT License](LICENSE).
+
+Third-party code, dependencies, data, images, and other content retain their own
+licenses and terms and are not covered by this license. No trademark rights are
+granted.
