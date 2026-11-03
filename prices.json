@@ -1,283 +1,283 @@
 {
-  "asOf": "2026-10-31T01:43:29.357Z",
+  "asOf": "2026-11-03T03:34:53.460Z",
   "base": "USD",
   "fx": {
     "USD": 1,
-    "TRY": 49.9308,
-    "EUR": 0.895576,
-    "GBP": 0.746882,
-    "DKK": 6.6968
+    "GBP": 0.746102,
+    "TRY": 49.9855,
+    "EUR": 0.893815,
+    "DKK": 6.6809
   },
   "quotes": {
     "SMR": {
       "symbol": "SMR",
       "name": "NuScale Power",
       "currency": "USD",
-      "price": 5.62,
-      "change": 0.24,
-      "changePct": 4.46,
-      "date": "2026-10-30"
-    },
-    "GEV": {
-      "symbol": "GEV",
-      "name": "GE Vernova",
-      "currency": "USD",
-      "price": 857.87,
-      "change": 42.87,
-      "changePct": 5.26,
-      "date": "2026-10-30"
+      "price": 5.35,
+      "change": 0.08,
+      "changePct": 1.52,
+      "date": "2026-11-02"
     },
     "VRT": {
       "symbol": "VRT",
       "name": "Vertiv Holdings",
       "currency": "USD",
-      "price": 232.5,
-      "change": 38.18,
-      "changePct": 19.65,
-      "date": "2026-10-30"
-    },
-    "OKLO": {
-      "symbol": "OKLO",
-      "name": "Oklo Inc.",
-      "currency": "USD",
-      "price": 25.25,
-      "change": -1.1,
-      "changePct": -4.17,
-      "date": "2026-10-30"
+      "price": 224.24,
+      "change": 24.46,
+      "changePct": 12.24,
+      "date": "2026-11-02"
     },
     "BWXT": {
       "symbol": "BWXT",
       "name": "BWX Technologies",
       "currency": "USD",
-      "price": 130.7,
-      "change": 3.51,
-      "changePct": 2.76,
-      "date": "2026-10-30"
+      "price": 130.47,
+      "change": -0.73,
+      "changePct": -0.56,
+      "date": "2026-11-02"
     },
-    "PLTR": {
-      "symbol": "PLTR",
-      "name": "Palantir Technologies",
+    "OKLO": {
+      "symbol": "OKLO",
+      "name": "Oklo Inc.",
       "currency": "USD",
-      "price": 184.11,
-      "change": -12.64,
-      "changePct": -6.42,
-      "date": "2026-10-30"
+      "price": 23.52,
+      "change": -2.42,
+      "changePct": -9.33,
+      "date": "2026-11-02"
     },
-    "AAPL": {
-      "symbol": "AAPL",
-      "name": "Apple Inc.",
+    "GEV": {
+      "symbol": "GEV",
+      "name": "GE Vernova",
       "currency": "USD",
-      "price": 344.63,
-      "change": -3.1,
-      "changePct": -0.89,
-      "date": "2026-10-30"
-    },
-    "MSFT": {
-      "symbol": "MSFT",
-      "name": "Microsoft Corp.",
-      "currency": "USD",
-      "price": 521.91,
-      "change": -2.6,
-      "changePct": -0.5,
-      "date": "2026-10-30"
-    },
-    "ONDS": {
-      "symbol": "ONDS",
-      "name": "Ondas Holdings",
-      "currency": "USD",
-      "price": 6.32,
-      "change": 0.12,
-      "changePct": 1.94,
-      "date": "2026-10-30"
+      "price": 862.25,
+      "change": 7.13,
+      "changePct": 0.83,
+      "date": "2026-11-02"
     },
     "KTOS": {
       "symbol": "KTOS",
       "name": "Kratos Defense",
       "currency": "USD",
-      "price": 41.09,
-      "change": 2.41,
-      "changePct": 6.23,
-      "date": "2026-10-30"
+      "price": 40.23,
+      "change": -0.2,
+      "changePct": -0.49,
+      "date": "2026-11-02"
     },
-    "RHM": {
-      "symbol": "RHM",
-      "name": "Rheinmetall AG",
-      "currency": "EUR",
-      "price": 1037.6,
-      "change": 18.6,
-      "changePct": 1.83,
-      "date": "2026-10-30"
-    },
-    "NVDA": {
-      "symbol": "NVDA",
-      "name": "NVIDIA Corp.",
+    "PLTR": {
+      "symbol": "PLTR",
+      "name": "Palantir Technologies",
       "currency": "USD",
-      "price": 204.64,
-      "change": -6.32,
-      "changePct": -3,
-      "date": "2026-10-30"
+      "price": 178.34,
+      "change": -20.5,
+      "changePct": -10.31,
+      "date": "2026-11-02"
     },
     "AVAV": {
       "symbol": "AVAV",
       "name": "AeroVironment",
       "currency": "USD",
-      "price": 126.11,
-      "change": 2.86,
-      "changePct": 2.32,
-      "date": "2026-10-30"
+      "price": 123.08,
+      "change": -2.37,
+      "changePct": -1.89,
+      "date": "2026-11-02"
+    },
+    "ONDS": {
+      "symbol": "ONDS",
+      "name": "Ondas Holdings",
+      "currency": "USD",
+      "price": 5.75,
+      "change": -0.41,
+      "changePct": -6.66,
+      "date": "2026-11-02"
+    },
+    "RHM": {
+      "symbol": "RHM",
+      "name": "Rheinmetall AG",
+      "currency": "EUR",
+      "price": 1000,
+      "change": -34.2,
+      "changePct": -3.31,
+      "date": "2026-11-02"
+    },
+    "AAPL": {
+      "symbol": "AAPL",
+      "name": "Apple Inc.",
+      "currency": "USD",
+      "price": 338.32,
+      "change": -5.59,
+      "changePct": -1.63,
+      "date": "2026-11-02"
+    },
+    "MSFT": {
+      "symbol": "MSFT",
+      "name": "Microsoft Corp.",
+      "currency": "USD",
+      "price": 507.12,
+      "change": -25.48,
+      "changePct": -4.78,
+      "date": "2026-11-02"
+    },
+    "NVDA": {
+      "symbol": "NVDA",
+      "name": "NVIDIA Corp.",
+      "currency": "USD",
+      "price": 202.06,
+      "change": -13.94,
+      "changePct": -6.45,
+      "date": "2026-11-02"
     },
     "GOOGL": {
       "symbol": "GOOGL",
       "name": "Alphabet Inc.",
       "currency": "USD",
-      "price": 279.84,
-      "change": -40.37,
-      "changePct": -12.61,
-      "date": "2026-10-30"
+      "price": 278.99,
+      "change": -37.81,
+      "changePct": -11.93,
+      "date": "2026-11-02"
     },
     "AMZN": {
       "symbol": "AMZN",
       "name": "Amazon.com Inc.",
       "currency": "USD",
-      "price": 240.35,
-      "change": -7.65,
-      "changePct": -3.08,
-      "date": "2026-10-30"
+      "price": 245.63,
+      "change": -3.46,
+      "changePct": -1.39,
+      "date": "2026-11-02"
     },
     "META": {
       "symbol": "META",
       "name": "Meta Platforms",
       "currency": "USD",
-      "price": 614.99,
-      "change": -27.63,
-      "changePct": -4.3,
-      "date": "2026-10-30"
+      "price": 606.73,
+      "change": -23.83,
+      "changePct": -3.78,
+      "date": "2026-11-02"
     },
     "TSLA": {
       "symbol": "TSLA",
       "name": "Tesla Inc.",
       "currency": "USD",
-      "price": 399.81,
-      "change": 27.59,
-      "changePct": 7.41,
-      "date": "2026-10-30"
+      "price": 403.82,
+      "change": 12.2,
+      "changePct": 3.12,
+      "date": "2026-11-02"
     },
     "AVGO": {
       "symbol": "AVGO",
       "name": "Broadcom Inc.",
       "currency": "USD",
-      "price": 326.08,
-      "change": 4.4,
-      "changePct": 1.37,
-      "date": "2026-10-30"
+      "price": 322.23,
+      "change": -6.94,
+      "changePct": -2.11,
+      "date": "2026-11-02"
     },
     "AMD": {
       "symbol": "AMD",
       "name": "Advanced Micro Devices",
       "currency": "USD",
-      "price": 504.8,
-      "change": -11.99,
-      "changePct": -2.32,
-      "date": "2026-10-30"
+      "price": 466.84,
+      "change": -64.44,
+      "changePct": -12.13,
+      "date": "2026-11-02"
     },
     "NFLX": {
       "symbol": "NFLX",
       "name": "Netflix Inc.",
       "currency": "USD",
-      "price": 62.08,
-      "change": -3.77,
-      "changePct": -5.73,
-      "date": "2026-10-30"
+      "price": 62.34,
+      "change": -1.56,
+      "changePct": -2.44,
+      "date": "2026-11-02"
     },
     "ARM": {
       "symbol": "ARM",
       "name": "Arm Holdings",
       "currency": "USD",
-      "price": 205.97,
-      "change": -4.36,
-      "changePct": -2.07,
-      "date": "2026-10-30"
+      "price": 196.79,
+      "change": -26.56,
+      "changePct": -11.89,
+      "date": "2026-11-02"
     },
     "TSM": {
       "symbol": "TSM",
       "name": "Taiwan Semiconductor",
       "currency": "USD",
-      "price": 406.13,
-      "change": -12.38,
-      "changePct": -2.96,
-      "date": "2026-10-30"
+      "price": 398.63,
+      "change": -25.74,
+      "changePct": -6.07,
+      "date": "2026-11-02"
     },
     "V": {
       "symbol": "V",
       "name": "Visa Inc.",
       "currency": "USD",
-      "price": 413.59,
-      "change": 5.67,
-      "changePct": 1.39,
-      "date": "2026-10-30"
+      "price": 425.51,
+      "change": 21.35,
+      "changePct": 5.28,
+      "date": "2026-11-02"
     },
     "JPM": {
       "symbol": "JPM",
       "name": "JPMorgan Chase",
       "currency": "USD",
-      "price": 337.04,
-      "change": 5.46,
-      "changePct": 1.65,
-      "date": "2026-10-30"
-    },
-    "DIS": {
-      "symbol": "DIS",
-      "name": "Walt Disney Co.",
-      "currency": "USD",
-      "price": 110.94,
-      "change": -1.58,
-      "changePct": -1.4,
-      "date": "2026-10-30"
+      "price": 340.58,
+      "change": 6.54,
+      "changePct": 1.96,
+      "date": "2026-11-02"
     },
     "SPY": {
       "symbol": "SPY",
       "name": "SPDR S&P 500 ETF",
       "currency": "USD",
-      "price": 755.72,
-      "change": -4.25,
-      "changePct": -0.56,
-      "date": "2026-10-30"
+      "price": 752.1,
+      "change": -13.27,
+      "changePct": -1.73,
+      "date": "2026-11-02"
     },
-    "QQQ": {
-      "symbol": "QQQ",
-      "name": "Invesco QQQ Trust",
+    "DIS": {
+      "symbol": "DIS",
+      "name": "Walt Disney Co.",
       "currency": "USD",
-      "price": 690.49,
-      "change": -13.91,
-      "changePct": -1.97,
-      "date": "2026-10-30"
-    },
-    "SIE": {
-      "symbol": "SIE",
-      "name": "Siemens AG",
-      "currency": "EUR",
-      "price": 265.65,
-      "change": 8.85,
-      "changePct": 3.45,
-      "date": "2026-10-30"
+      "price": 113.11,
+      "change": 2.71,
+      "changePct": 2.45,
+      "date": "2026-11-02"
     },
     "KO": {
       "symbol": "KO",
       "name": "Coca-Cola Co.",
       "currency": "USD",
-      "price": 94.08,
-      "change": 1.37,
-      "changePct": 1.48,
-      "date": "2026-10-30"
+      "price": 95.83,
+      "change": 3.13,
+      "changePct": 3.38,
+      "date": "2026-11-02"
+    },
+    "QQQ": {
+      "symbol": "QQQ",
+      "name": "Invesco QQQ Trust",
+      "currency": "USD",
+      "price": 681.09,
+      "change": -31.11,
+      "changePct": -4.37,
+      "date": "2026-11-02"
+    },
+    "SIE": {
+      "symbol": "SIE",
+      "name": "Siemens AG",
+      "currency": "EUR",
+      "price": 270.35,
+      "change": 8.95,
+      "changePct": 3.42,
+      "date": "2026-11-02"
     },
     "MC": {
       "symbol": "MC",
       "name": "LVMH",
       "currency": "EUR",
-      "price": 387,
-      "change": 1.6,
-      "changePct": 0.42,
-      "date": "2026-10-30"
+      "price": 393.65,
+      "change": 5.4,
+      "changePct": 1.39,
+      "date": "2026-11-02"
     }
   }
 }
